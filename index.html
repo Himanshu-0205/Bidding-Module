@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Bootstrap css starts from here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Fontawesome css starts from here -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Custom css starts from here -->
+    <link rel="stylesheet" href="css/cloudtail.css" />
+
+    <!-- Custom css starts from here -->
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+  	<header>
+  			<nav class="navbar navbar-inverse">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>                        
+			      </button>
+			      <a class="navbar-brand" href="index.html">
+			      	<img src="images/logo1.png" />
+			      </a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="myNavbar">
+			      <ul class="nav navbar-nav navbar-right">
+			        <li><a href="#"><i class="fa fa-question-circle"></i><span class="blue">Support</span></a></li>
+			        <li><a href="#"><i class="fa fa-user"></i><span class="blue">Login/Signup</span></a></li>
+			      </ul>
+			      <div class="lh20">&nbsp;</div>
+            
+            <div id="input_container">
+                <input type="text" placeholder="Search" id="input" class="search pull-right">
+                <img src="images/search-icon.png" id="input_img" width="200" />
+            </div>
+
+			    </div>
+			  </div>
+			</nav>
+  	</header>
+
+  	<section>
+  		<div class="row">
+  			<div class="col-md-5">
+  				<!-- <div class="left-image">&nbsp;</div>-->
+  				<img src="images/printer.jpg" width = "450" height="400"/>
+  			</div>
+
+  			<div class="col-md-7 pull-left">
+  				<h2 class="heading">Printers & Scanners</h2>
+  				<div class='well with-inlays pallet-summary'>
+					<div class='row'>
+					<div class='col-sm-12 well-inlay'>
+						<div class='pallet-name'>
+						<span class='pallet-name__label'>Location:New Delhi</span>
+						<span class='pallet-name__value'></span>
+						<div class='pallet-meta-sep hidden-xs'></div>
+						<br class='visible-xs'>
+						<span class='pallet-type'>
+						Market Value:Rs.95,000
+						</span>
+						</div>
+					</div>
+					</div>
+  				</div>
+  				
+  				<div class='well with-inlays pallet-summary'>
+  				<div class="row">
+  					<div class="col-md-6" id="vertical">
+  						<div class="left-text">
+  							<h4><i class="fa fa-file-text fa-lg"></i><span class="ml10">Scratch & Dent</span></h4>
+  							<p>Cosmetic issues	 and/or functionality defects. Often missing manuals and/or accessories such as batteries. May have non-retail packaging. See condition details on manifest.</p>
+  						</div>
+
+              <div class="left-text">
+                <h4><i class="fa fa-th-large"></i><span class="ml10">10 Units in Lot</span></h4>
+              </div>
+
+  							<div class="download">DOWNLOAD MANIFEST</div>
+  					</div>
+
+  					<div class="col-md-6">
+		  					<div class="lh30">&nbsp;</div>
+                <button type="button" class="pull-left bid-decrement">-</button>
+                <div class="rupees">Rs.55,000</div>
+                <button type="button" class="pull-left bid-increment">+</button>
+                <div class="place-bid">Place Bid</div>
+                <div class="lh20">&nbsp;</div>
+                <div class="terms-condition pull-left">
+                <input type="checkbox" class="checkbox pull-left" />
+                <span class="tnc">I agree and accept the Terms &amp; Conditions</span>
+            </div> 
+  					</div>
+  				</div>
+  			</div>
+  			</div>
+
+
+
+        <!-- <div class='well with-inlays pallet-summary'>
+          <div class='row'>
+          <div class='col-sm-12 well-inlay'>
+          <div class='pallet-name'>
+          <span class='pallet-name__label'>Location:</span>
+          <span class='pallet-name__value'>New Delhi</span>
+          <div class='pallet-meta-sep hidden-xs'></div>
+          <br class='visible-xs'>
+          <span class='pallet-type'>
+          Market Value:Rs.95,000
+          </span>
+          </div>
+          </div>
+          </div>
+          <div class='row'>
+          <div class='col-sm-6 well-inlay'>
+          <div class='condition'>
+          <div class='condition__title'>
+          Scratch &amp; Dent
+          </div>
+          <div class='condition__description'>
+          Cosmetic issues  and/or functionality defects. Often missing manuals and/or accessories such as batteries. May have non-retail packaging. See condition details on manifest.
+          </div>
+          </div>
+          <div class='pallet-item-quantity clearfix'>
+          <div class='pallet-item-quantity__number'>10</div>
+          <div class='pallet-item-quantity__title'>
+          Units in lot
+          </div>
+          </div>
+          </div>
+          <div class='col-sm-6 well-inlay'>
+          <div class='pricing'>
+          <div class='row pricing__msrp-section'>
+          <div class='col-xs-6 msrp-title-spacing'>
+          <div class='pricing__msrp-title'>Orig. Retail</div>
+          <span data-placement='right' data-toggle='tooltip' id='palletdetail_tooltip_msrp' title='Original Retail represents the estimated listed price when the product was first released to market. It is based on the condition of new and does not necessarily represent current retail prices.'>
+          </span>
+          </div>
+          <div class='col-xs-6 pull-right'>
+          <div class='pricing__msrp-price'>$1,082</div>
+          <div class='pricing__percent-off'>83% Off</div>
+          </div>
+          </div>
+          <div class='row'>
+          <div class='col-xs-4 col-sm-6'>
+          <div class='pricing__bulq-title'>Bulq Price</div>
+          </div>
+          <div class='col-xs-8 col-sm-6 pull-right'>
+          <div class='pricing__bulq-price'>$182</div>
+          <div class='pricing__shipping'>+ $150 Shipping</div>
+          </div>
+          </div>
+          <a class="btn btn-success btn-block btn-add-to-cart not-in-cart" data-gtm-tracking="true" data-gtm-category="pallet detail page" data-gtm-action="add to cart" data-gtm-label="add to cart: Office Equipment - Officemax, Realspace" rel="nofollow" data-method="post" href="/cart/pallets/?id=8075"><i class='bulq-icon-shopping-cart'></i>
+          <span class='btn-text'>Add to Cart</span>
+          </a><a class="btn btn-cutout btn-block pallet-manifest-btn" data-gtm-tracking="true" data-gtm-category="pallet_detail_page" data-gtm-action="download manifest" data-gtm-label="manifest: Office Equipment - Officemax, Realspace" href="/pallet_manifests/ptaa21862/office-equipment-officemax-realspace.xlsx"><i class='bulq-icon-manifest'></i>
+          Download Manifest
+          </a></div>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div> -->
+
+
+
+
+
+
+  		</div>
+  	</section>
+  	
+  	<section>
+  		<hr>
+  		<h2 class="heading">Lot Details</h2>
+  		<div class="row">
+  			<div class="col-md-8">
+  				<div class="pull-right">
+  					<div class="arrange-by pull-left">Arrange By</div>
+  					<div class="category">CATEGORY</div>
+  					<div class="products">PRODUCTS</div>
+  				</div>
+  				<div class="lh20">&nbsp;	</div>
+          <div id="page-wrap">
+          <table>
+            <thead>
+            <tr>
+              <th>BRAND</th>
+              <th>PRODUCT NAME</th>
+              <th>QUANTITY</th>
+              <th>VALUE(PPU)</th>
+              <th>TOTAL VALUE</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Epson</td>
+              <td>Epson Stylus Photo Wireless Color Inject Printer</td>
+              <td>3</td>
+              <td>Rs.10,999</td>
+              <td>Rs.32,997</td>
+            </tr>
+            <tr>
+              <td>HP</td>
+              <td>HP Laser jet Pro 300 Color Inkjet Printer</td>
+              <td>1</td>
+              <td>Rs.8,999</td>
+              <td>Rs.8,997</td>
+            </tr>
+            <tr>
+              <td>Samsung</td>
+              <td>Samsung Xpress Lasor Color Printer</td>
+              <td>1</td>
+              <td>Rs.9,999</td>
+              <td>Rs.9,999</td>
+            </tr>
+            <tr>
+              <td>Brother</td>
+              <td>Brother MFC Color Inkjet Printer</td>
+              <td>1</td>
+              <td>Rs.7,999</td>
+              <td>Rs.7,999</td>
+            </tr>
+            </tbody>
+          </table>
+          </div>
+  			</div>
+
+  			<div class="col-md-4">
+  				<div class="detail-wrapper">
+  					<div class="row">
+  						<div class="col-md-5">
+  							<img src="images/printer.jpg" width="150" height="150" />
+  						</div>
+
+  						<div class="col-md-7 mt20">
+  							<div>Name: Printers & Scanners</div>
+  							<div class="lh10">&nbsp;</div>
+  							<div>Condition: Scratch & Dent</div>
+  							<div class="lh10">&nbsp;</div>
+  							<div>Location: New Delhi</div>
+  						</div>
+  					</div>
+  					<div class="lh30">&nbsp;</div>
+  					<button type="button" class="pull-left bid-decrement">-</button>
+            <div class="rupees">Rs.55,000</div>
+            <button type="button" class="pull-left bid-increment">+</button>
+  					<div class="place-bid">Place Bid</div>
+  					<div class="lh20">&nbsp;</div>
+            <div class="terms-condition pull-left">
+  					   <input type="checkbox" class="checkbox pull-left" />
+               <span class="tnc">I agree and accept the Terms &amp; Conditions</span>
+            </div>	 
+  				</div>
+  			</div>
+  		</div>
+  	</section>
+  </body>
+
+  <!-- jQuery library -->
+  <script src="js/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+</html>

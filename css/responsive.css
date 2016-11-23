@@ -1,0 +1,166 @@
+/* 
+  Max width before this PARTICULAR table gets nasty
+  This query will take effect for any screen smaller than 760px
+  and also iPads specifically.
+  */
+  @media 
+  only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px)  {
+  
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr { 
+      display: block; 
+    }
+    
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr { 
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    
+    tr { border: 1px solid #ccc; }
+    
+    td { 
+      /* Behave  like a "row" */
+      border: none;
+      border-bottom: 1px solid #eee; 
+      position: relative;
+      padding-left: 50%; 
+    }
+    
+    td:before { 
+      /* Now like a table header */
+      position: absolute;
+      /* Top/left values mimic padding */
+      top: 6px;
+      left: 6px;
+      width: 45%; 
+      padding-right: 10px; 
+      white-space: nowrap;
+    }
+    
+    /*
+    Label the data
+    */
+    td:nth-of-type(1):before { content: "BRAND"; }
+    td:nth-of-type(2):before { content: "PRODUCT NAME"; }
+    td:nth-of-type(3):before { content: "QUANTITY"; }
+    td:nth-of-type(4):before { content: "VALUE(PPU)"; }
+    td:nth-of-type(5):before { content: "TOTAL VALUE"; }
+    }
+  
+  /* Smartphones (portrait and landscape) ----------- */
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 480px) {
+    body { 
+      padding: 0; 
+      margin: 0; 
+      width: 320px; }
+    }
+  
+  /* iPads (portrait and landscape) ----------- */
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    body { 
+      width: 495px; 
+    }
+  }
+
+@media (min-width: 1200px) {
+	
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+ }
+
+
+ @media (min-width: 400px) and (max-width: 1042px) {
+	
+ }
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+
+@media (min-width: 400px) and (max-width: 800px) {
+	
+}
+
+
+@media (max-width: 767px) {
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	  background: #4facf7;
+	  margin-top: -5px;
+	}
+
+	.navbar-brand{
+		float: none;
+	}
+
+	.call-me{
+		padding: 6px 28px;
+		font-size: 14px;
+		margin-left: 41%;
+	}
+
+	.call-wrapper{
+		width: 100%;
+		padding: 16px 13px;
+	}
+
+	.call-wrapper p{
+		font-size: 15px;
+	}
+
+	.gift-wrapper{
+		width: 100%;
+	}
+
+	.price-wrapper{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	.col-md-3{
+		margin-bottom: 10px;
+	}
+
+	.thumbnail{
+		margin-left: 20px;
+	}
+
+	.captions del{
+		margin-left: 8px;
+	}
+
+	.captions{
+		float: none;
+	}
+}
+
+
+@media (max-width: 480px) {
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	  background: #4facf7;
+	  margin-top: -5px;
+	}
+
+	.call-me{
+		padding: 6px 40px;
+		font-size: 14px;
+		margin-left: 20%;
+	}
+
+	.call-wrapper{
+		width: 100%;
+		padding: 16px 13px;
+	}
+}
+
+
+
